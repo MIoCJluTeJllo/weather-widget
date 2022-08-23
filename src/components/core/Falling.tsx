@@ -35,8 +35,6 @@ const Wrap = styled.div<{ fall: boolean }>`
     }
   }
   ${props => props.fall && css`
-    transition: 2s;
-    transform: translateY(45%);
-    opacity: 0;
+    display: none;
   `}
 `;
