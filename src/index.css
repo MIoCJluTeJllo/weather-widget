@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Open_Sans";
+  src: local("Open_Sans"),
+    url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RubikDirt";
+  src: local("RubikDirt"),
+    url("./fonts/RubikDirt/RubikDirt-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: 'Open_Sans',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

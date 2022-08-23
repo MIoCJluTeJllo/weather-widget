@@ -1,0 +1,13 @@
+{
+  "explorer.confirmDelete": false,
+  "git.ignoredRepositories": [
+      "/docs/"
+  ],
+  "workbench.colorTheme": "Default Light+",
+  "open-php-html-js-in-browser.selectedBrowser": "Chrome",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
