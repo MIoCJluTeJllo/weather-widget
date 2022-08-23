@@ -27,6 +27,7 @@ export default function WeatherSearch() {
   return (
     <Wrap>
       <Input
+        handleConfirm={handleSearch}
         handleChange={handleChange}
         placehoder={'City name...'} />
       <IconButton

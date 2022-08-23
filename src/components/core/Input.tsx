@@ -2,15 +2,23 @@ import styled from 'styled-components';
 
 interface Props {
   placehoder: string,
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  handleConfirm?: () => void
 }
 
 
 export default function Input({
   placehoder,
-  handleChange }: Props) {
+  handleChange,
+  handleConfirm = () => { } }: Props) {
+  const pressEnter = (key: string) => {
+    if (key === 'Enter') {
+      handleConfirm()
+    }
+  }
   return (
     <Wrap
+      onKeyPress={event => pressEnter(event.key)}
       onChange={handleChange}
       placeholder={placehoder} />
   );
