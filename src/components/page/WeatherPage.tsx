@@ -21,8 +21,8 @@ export default function WeatherPage() {
           <>
             <IconButton
               handleClick={() => dispatch(switchMode('view'))}
-              color={theme.main.colors.success}
-              hoverColor={theme.main.colors.success_hov}>
+              color={theme.main.colors.default}
+              hoverColor={theme.main.colors.default_hov}>
               <BsEye size={24} />
             </IconButton>
             <WeatherSearch />

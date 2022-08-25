@@ -28,4 +28,6 @@ const Wrap = styled.input`
   outline: none;
   border: none;
   width: 100%;
+  border-radius: ${props => props.theme.main.size * 2}px;
+  padding: ${props => props.theme.main.size}px ${props => props.theme.main.size * 2}px;
 `;

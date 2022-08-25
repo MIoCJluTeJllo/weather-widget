@@ -31,8 +31,8 @@ export default function WeatherSearch() {
         handleChange={handleChange}
         placehoder={'City name...'} />
       <IconButton
-        color={theme.main.colors.primary}
-        hoverColor={theme.main.colors.primary_hov}
+        color={theme.main.colors.default}
+        hoverColor={theme.main.colors.default_hov}
         handleClick={handleSearch}>
         {status == 'loading' ?
           <ClockLoader

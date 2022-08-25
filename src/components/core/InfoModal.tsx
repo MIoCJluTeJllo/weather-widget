@@ -46,5 +46,6 @@ const Wrap = styled.div<{ time: number }>`
 const Text = styled.div`
   padding: ${props => props.theme.main.size}px ${props => props.theme.main.size * 3}px;
   border-radius: ${props => props.theme.main.size * 2}px;
-  background: ${props => props.theme.main.colors.info};
+  border: solid 1px ${props => props.theme.main.colors.default};
+  background-color: white;
 `;

@@ -36,8 +36,8 @@ export default function WeatherCard({
         {mini &&
           <RemoveIcon
             handleClick={handlerRemove}
-            color={theme.main.colors.error}
-            hoverColor={theme.main.colors.error_hov}>
+            color={theme.main.colors.default}
+            hoverColor={theme.main.colors.default_hov}>
             <BsTrash size={24} />
           </RemoveIcon>}
       </Title>
@@ -45,7 +45,9 @@ export default function WeatherCard({
         <Header>
           <Main>
             <Value>{tempFormat(temp)}</Value>
-            <Icon src={`https://openweathermap.org/img/w/${icon}.png`} />
+            <Icon
+              loading={'lazy'}
+              src={`https://openweathermap.org/img/w/${icon}.png`} />
           </Main>
           <Desc>
             {`${description}`}
@@ -69,12 +71,15 @@ export default function WeatherCard({
 }
 
 const Wrap = styled.div`
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: ${props => props.theme.main.size * 3}px;
   padding: ${props => props.theme.main.size * 4}px;
-  border-radius: 5px;
-  border-bottom: solid ${props => props.theme.main.colors.default} 1px;
+  margin: ${props => props.theme.main.size * 2}px;
+  border-radius: ${props => props.theme.main.size * 4}px;;
+  border: solid ${props => props.theme.main.colors.default} 1px;
+  user-select: none;
 `;
 
 const Title = styled.div`
